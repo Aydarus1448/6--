@@ -29,7 +29,7 @@ int main() {
     // 3. Выводим содержимое
     printf("\nСодержимое файла:\n%s", content);
 
-    // 4. Проверяем, есть ли слово "сочный"
+    // 4. Проверяем, есть ли слово "арбуз"
     char target[] = "арбуз";
     int contentLength = 0;
     int targetLength = 0;
