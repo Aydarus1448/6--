@@ -1,17 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    // Симулируем многострочный ввод
     char lines[3][30] = {
         "Privet.txt",
         "сочный",
         "арбуз"   
     };
 
-    // 1. Выводим имя файла
     printf("Имя файла: %s\n", lines[0]);
 
-    // 2. Объединяем строки содержимого
     char content[100];
     int index = 0;
     for (int i = 1; i < 3; i++) { // строки со 2 по последнюю
@@ -26,10 +23,8 @@ int main() {
     }
     content[index] = '\0'; // конец всей строки
 
-    // 3. Выводим содержимое
     printf("\nСодержимое файла:\n%s", content);
 
-    // 4. Проверяем, есть ли слово "арбуз"
     char target[] = "арбуз";
     int contentLength = 0;
     int targetLength = 0;
